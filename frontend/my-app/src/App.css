@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: powderblue;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translate(2px, 2px);
+  transition: all 0.5s ease-out;
+}
+
+.grid {
+  display: grid;
+  margin: 1rem 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+h2,
+h3,
+p {
+  margin: 0.4rem;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem !important;
+}
